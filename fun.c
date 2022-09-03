@@ -51,3 +51,13 @@ void ntocc(int a,char s[])
         }
     }
 }
+
+void itoa(int n, char s[])  
+{
+    if(n/10)
+    itoa(n/10,s);
+
+    s[ia++] = n % 10 + '0';
+    s[ia] = '\0';
+}
+
